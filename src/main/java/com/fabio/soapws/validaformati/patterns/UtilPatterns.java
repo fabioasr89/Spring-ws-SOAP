@@ -12,7 +12,7 @@ public class UtilPatterns {
 	
 	
 	public static boolean validateCf(String daVerificare) throws Exception{
-		if(StringUtils.isNotBlank(daVerificare)) {
+		if(StringUtils.isBlank(daVerificare)) {
 			return false;
 		}else {
 			Pattern pattern=null;
